@@ -1,0 +1,23 @@
+{
+  "name": "learn-algorithm",
+  "version": "1.0.0",
+  "description": "读《漫画算法-小灰的算法之旅》，学习算法知识",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangyanling77/learn-algorithm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangyanling77/learn-algorithm/issues"
+  },
+  "homepage": "https://github.com/zhangyanling77/learn-algorithm#readme"
+}
