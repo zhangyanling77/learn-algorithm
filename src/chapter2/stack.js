@@ -25,9 +25,10 @@ class Stack {
   size() {
     return this.top
   }
-  
+  // 清空栈
   clear() {
     this.top = 0
+    this.data = []
   }
 
   output() {
