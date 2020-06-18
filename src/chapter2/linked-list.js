@@ -9,7 +9,7 @@ class Node {
     this.next = null
   }
 }
-
+// 单向链表
 class LinkedList {
   constructor() {
     // 头节点
@@ -43,7 +43,7 @@ class LinkedList {
       this.tail.next = insertedNode
       this.tail = insertedNode
     } else { // 中间插入
-      let prevNode = this.get(index - 1); // 拿到前一个节点
+      let prevNode = this.find(index - 1); // 拿到前一个节点
       insertedNode.next = prevNode.next;
       prevNode.next = insertedNode
     }
@@ -54,7 +54,7 @@ class LinkedList {
    * @param {查找元素的位置} index
    * @memberof LinkedList
    */
-  get(index) {
+  find(index) {
     if (index < 0 || index > this.size) {
       throw new Error('超出链表节点范围！')
     }
@@ -80,13 +80,13 @@ class LinkedList {
       removedNode = this.head;
       this.head = this.head.next;
     } else if (index === this.size - 1) { // 删除尾节点
-      let prevNode = this.get(index - 1);
+      let prevNode = this.find(index - 1);
       removedNode = prevNode.next;
       prevNode.next = null;
       this.tail = prevNode;
     } else { // 删除中间的节点
-      let prevNode = this.get(index - 1);
-      let nextNode = this.get(index + 1);  // prevNode.next.next;
+      let prevNode = this.find(index - 1);
+      let nextNode = this.find(index + 1);  // prevNode.next.next;
       removedNode = prevNode.next;
       prevNode.next = nextNode
     }
