@@ -2,10 +2,6 @@
  * 数据结构基础
  * 栈
 */
-/** 
- * 数据结构基础
- * 栈
-*/
 
 class Stack {
   constructor() {
