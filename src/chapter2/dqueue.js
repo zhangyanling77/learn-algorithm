@@ -2,7 +2,6 @@
  * 数据结构基础
  * 双向队列
 */
-
 class DQueue {
   constructor() {
     this.data = [];
@@ -19,7 +18,7 @@ class DQueue {
   enqueue(element) {
     this.data.push(element);
   }
-  // 删除队首
+  // 队头删除
   dequeue() {
     return this.data.shift();
   }
@@ -34,6 +33,10 @@ class DQueue {
   // 队列是否为空
   empty() {
     return this.data.length == 0 ? true : false;
+  }
+  
+  size() {
+    return this.data.length;
   }
 
   output() {
