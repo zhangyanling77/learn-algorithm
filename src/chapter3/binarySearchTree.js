@@ -115,6 +115,14 @@ class TreeNode {
     }
     postOrderTraveralNode(this.root, callback)
   }
+   
+  // 层序遍历
+  levelOrderTraveral(callback) {
+    let levelOrderTraveral = function (node, callback) {
+      // 待实现
+    }
+    levelOrderTraveral(this.root, callback)
+  }
 
   // 从树中移除一个节点
   remove(data) {
@@ -174,4 +182,7 @@ class TreeNode {
  
  console.log('后序遍历：')
  btree.postOrderTraveral(output) // 2 9 7 4 3
+
+//  console.log('层序遍历：')
+//  btree.levelOrderTraveral(output)
 
