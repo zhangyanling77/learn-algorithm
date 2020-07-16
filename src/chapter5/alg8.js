@@ -71,7 +71,7 @@ function removeKDigits(num, k) {
 
 function getString(array, offset, end) {
   return array.reduce((acc, curr, index) => {
-    if (index >= offset && index <= end) {
+    if (index >= offset && index < end) {
       acc += curr
     }
     return acc
@@ -82,3 +82,5 @@ console.log(removeKDigits(1593212, 3)) // 1212
 console.log(removeKDigits(30200, 1)) // 200
 console.log(removeKDigits(10, 2)) // 0
 console.log(removeKDigits(541270936, 3)) // 120936
+
+console.log(removeKDigits(15932, 3))
